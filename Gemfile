@@ -15,7 +15,10 @@ gem "minima", "~> 2.5"
 # gem "github-pages", group: :jekyll_plugins
 # If you have any plugins, put them here!
 group :jekyll_plugins do
+  gem "jekyll-remote-theme"
+  gem "just-the-docs"
   gem "jekyll-feed", "~> 0.12"
+  gem "github-pages" # XXX Necessary to reproduce the behaviour of GitHub Pages - When this is loaded, "jekyll" must not be bundled because it's included within
 end
 
 # Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem
@@ -27,7 +30,3 @@ end
 
 # Performance-booster for watching directories on Windows
 gem "wdm", "~> 0.1.1", :platforms => [:mingw, :x64_mingw, :mswin]
-
-# Theme
-gem "just-the-docs"
-gem "jekyll-remote-theme"
