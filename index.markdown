@@ -7,7 +7,7 @@ layout: home
 
 {% for job in site.jobs %}
   <h2>
-    <a href="{{ job.url }}">
+    <a href="{{ job.url | relative_url }}">
       {{ job.title }}
     </a>
   </h2>
