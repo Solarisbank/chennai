@@ -36,7 +36,7 @@ collections:
   jobs:
     output: true
 
-logo: "/assets/logo.png"
+logo: "/imgs/logo.png"
 just_the_docs:
   collections:
     jobs:
